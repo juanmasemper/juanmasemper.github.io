@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- Librerias para los estilos -->
+    
+    <!-- El link de esto es: https://cdnjs.com/libraries/font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- El link de esto es: https://swiperjs.com/get-started -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <title>PORTFOLIO</title>
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">JUAN MANUEL</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="css/images/JuanmaFoto.png" alt="">
+            </div>
+            <h1>Juan Semper</h1>
+            <h2>Alumno avanzado en Ingeniería en Sistemas.</h2>
+            <div class="redes">
+                <a href="https://www.instagram.com/juanmasemper_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/juanma.semper?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://discord.gg/AncFFCnM" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.linkedin.com/in/juan-manuel-semper/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/juanmasemper" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola, soy Juan Manuel Semper.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Veniam qui in voluptatem, dolore itaque minima velit sunt incidunt quo assumenda. Et itaque eius 
+                culpa magnam ducimus nisi tenetur omnis rerum.
+            </p>
+
+            <div class="fila">
+                <!-- Datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Fecha de nacimiento</strong>
+                            25-03-2001
+                        </li>
+                        <br>
+                        <li>
+                            <strong>Teléfono</strong>
+                            (+54) 221-5703572
+                        </li>
+                        <li>
+                            <div id="container">
+                                <strong>Email</strong>
+                                <p id="myText" contenteditable>juanmanuelsemper@gmail.com</p>
+                                 <button onclick="copyText()"><i class="fa-solid fa-copy"></i></button>
+                                <script src="js/copiarMail.js"></script>
+                            </div>
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Calle 148 y 472 N° 175, Barrio Lomas de City Bell
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-futbol"></i>
+                            <span>DEPORTES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>SERIES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skills -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML5 & CSS3</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>88%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>OOP</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>C & C#</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>API REST</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>AZURE</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Resolución de problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adaptabilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dev Ops</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Bachiller en Cs.Sociales</h4>
+                        <span class="casa">Colegio del Centenario</span>
+                        <span class="fecha">2013 - 2018</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Natus voluptatum eligendi asperiores minima nam doloremque, sit suscipit, 
+                            nemo laborum ad consequatur sint! Quam ipsum nisi enim libero voluptatem maxime tempore!
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniería en Sistemas</h4>
+                        <span class="casa">Universidad Tecnológica Nacional La Plata</span>
+                        <span class="fecha">2019 - En curso</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Natus voluptatum eligendi asperiores minima nam doloremque, sit suscipit, 
+                            nemo laborum ad consequatur sint! Quam ipsum nisi enim libero voluptatem maxime tempore!
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Arte y Multimedia</h4>
+                        <span class="casa">CURSO QUE HAGA</span>
+                        <span class="fecha">fecha - fecha</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Natus voluptatum eligendi asperiores minima nam doloremque, sit suscipit, 
+                            nemo laborum ad consequatur sint! Quam ipsum nisi enim libero voluptatem maxime tempore!
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia Laboral</h3>
+                    <div class="item der">
+                        <h4>Asistente Administrativo</h4>
+                        <span class="casa">Estructuras Financieras</span>
+                        <span class="fecha">2020 - 2022</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Natus voluptatum eligendi asperiores minima nam doloremque, sit suscipit, 
+                            nemo laborum ad consequatur sint! Quam ipsum nisi enim libero voluptatem maxime tempore!
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Asistente Administrativo de Exportaciones e Importaciones</h4>
+                        <span class="casa">Vidriauto SRL</span>
+                        <span class="fecha">2022 - 2023</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Natus voluptatum eligendi asperiores minima nam doloremque, sit suscipit, 
+                            nemo laborum ad consequatur sint! Quam ipsum nisi enim libero voluptatem maxime tempore!
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Asistente Administrativo</h4>
+                        <span class="casa">Phi Asset Managment</span>
+                        <span class="fecha">2024</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Natus voluptatum eligendi asperiores minima nam doloremque, sit suscipit, 
+                            nemo laborum ad consequatur sint! Quam ipsum nisi enim libero voluptatem maxime tempore!
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+                <div class="images">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="css/images/project.PNG" alt="project">
+                                <div class="titulo-container">
+                                    <h3>Proyecto personal</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="css/images/agremiacionOdontologica1.PNG" alt="agremiacionOdontologica1">
+                                <div class="titulo-container">
+                                    <h3>1ra Parte - Agremiación Odontológica</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="css/images/agremiacionOdontologica2.PNG" alt="agremiacionOdontologica2">
+                                <div class="titulo-container">
+                                    <h3>2da Parte - Agremiación Odontológica</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="css/images/123123.PNG" alt="ojota">
+                                <div class="titulo-container">
+                                    <h3>Pagina de Consultora de inversiones</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  <!-- El link de esto es: https://swiperjs.com/get-started -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+                <script src="js/slider.js"></script>                 
+        </div>
+        
+    </section>
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tu Nombre">
+                    <input type="text" placeholder="Número Telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="css/images/ubicacion.PNG" alt="ubicacion">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Reuniones: Av. del Petroleo Argentino 417, Berisso, Provincia de Buenos Aires
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamame: (+54) 221-5703572
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: juanmanuelsemper@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.instagram.com/juanmasemper_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/juanma.semper?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://discord.gg/AncFFCnM" target="_blank"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://www.linkedin.com/in/juan-manuel-semper/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/juanmasemper" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
