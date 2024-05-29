@@ -30,7 +30,7 @@ html{
 }
 .contenedor-header header .logo a{
     font-family: 'Righteous';
-    font-size: 36px;
+    font-size: 36px; /* Ajuste del tamaño de fuente para pantallas pequeñas */
     color: #836FFF;
     text-decoration: none;
 }
@@ -151,9 +151,9 @@ button {
 .sobremi .fila{
     display: flex;
 }
-.sobremi .fila .col
-{
-    width: 50%;
+.sobremi .fila .col{
+    width: 100%;
+    margin-bottom: 20px; /* Añade un margen inferior para separar las columnas en pantallas pequeñas */
 }
 .sobremi .fila .col h3{
     font-size: 28px;
@@ -162,6 +162,7 @@ button {
 }
 .sobremi .fila .col ul{
     list-style: none;
+    font-size: 14px;
 }
 .sobremi .fila .col ul li{
     margin: 12px 0;
@@ -186,13 +187,14 @@ button {
     height: 100px;
     background-color: #252A2E;
     border-radius: 10px;
-    margin: 0 15px 15px 0;
+    margin: 10px; /* Ajuste del margen */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: .3s;
-}.sobremi .fila .col .contenedor-intereses .interes:hover{
+}
+.sobremi .fila .col .contenedor-intereses .interes:hover{
     background-color: #836FFF;
 }
 .sobremi .fila .col .contenedor-intereses .interes i{
@@ -246,8 +248,9 @@ button {
     display: flex;
 }
 .skills .fila .col {
-    width: 50%;
+    width: 100%;
     padding: 0 20px;
+    margin-bottom: 20px; /* Añade un margen inferior para separar las columnas en pantallas pequeñas */
 }
 .skills .fila .col h3 {
     font-size: 28px;
@@ -261,7 +264,7 @@ button {
 }
 .skills .skill .barra-skill {
     height: 8px;
-    width: 80%;
+    width: 100%;
     background-color: #131517;
     position: relative;
     margin-bottom: 30px;
@@ -436,6 +439,7 @@ button {
 .curriculum .fila .col {
     width: 49%;
     padding: 0 20px;
+    margin-bottom: 20px;
 }
 .curriculum .fila .col h3 {
     font-size: 28px;
@@ -544,9 +548,8 @@ button {
 }
 
 .portfolio .galeria .proyecto {
+    width: 100%;
     position: relative;
-    max-width: 640px;
-    /* height: fit-content; */ /* Eliminar esta línea ya que height se ajustará automáticamente al contenido */
     margin: 10px;
 }
 
@@ -561,7 +564,7 @@ button {
 
 .swiper-slide .titulo-container {
     position: absolute;
-    top: 50%;
+    top: 49.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
@@ -571,6 +574,7 @@ button {
     text-align: center;
     opacity: 0;
     transition: opacity 0.3s ease;
+    border-radius: 18px;
 }
 
 .swiper-slide:hover .titulo-container {
@@ -612,11 +616,18 @@ button {
     text-align: center;
     padding: 20px 0;
 }
+.contacto h4 {
+    font-size: 18px;
+    font-family: 'Righteous';
+    text-align: center;
+    padding: 20px 0;
+}
 .contacto .fila {
     display: flex;
 }
 .contacto .col {
     width: 50%;
+    margin-bottom: 20px;
     padding: 10px;
     position: relative;
 }
@@ -662,7 +673,7 @@ button {
 }
 .contacto .col .info {
     position: absolute;
-    top: 42%;
+    top: 62%;
     background-color: #252A2E;
     padding: 20px;
     width: 390px;
@@ -702,7 +713,7 @@ footer .redes a{
     width: 42px;
     height: 42px;
     line-height: 42px;
-    margin: 40px 5px;
+    margin: 10px 5px;
     font-size: 20px;
     transition: .3s;
 }
@@ -743,6 +754,47 @@ footer .arriba {
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
+    .contenedor-header header .logo a {
+        font-size: 24px;
+    }
+    .sobremi .fila {
+        flex-direction: column;
+    }
+    .skills .fila {
+        flex-direction: column; /* Asegura que las columnas se apilen verticalmente */
+    }
+
+    .curriculum .fila {
+        flex-direction: column; /* Asegura que las columnas se apilen verticalmente */
+    }
+
+    .portfolio .galeria {
+        flex-direction: column; /* Asegura que los proyectos se apilen verticalmente */
+    }
+    .contacto .fila {
+        flex-direction: column; /* Asegura que las columnas se apilen verticalmente */
+    }
+    .swiper-slide h3 {
+        color: #fff;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 10px;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    .swiper-slide .titulo-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -51%);
+        width: 100%;
+        height: 100%;
+        background-color: rgba(33, 25, 81, 0.7); /* Fondo semi-transparente para hacer el texto más legible */
+        padding: 100px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        border-radius: 16px;
+    }
 }
 @media screen and (max-width:700px){
     .sobremi .fila{
@@ -780,7 +832,7 @@ footer .arriba {
         max-width: 100%;
     }
     .portfolio .galeria .proyecto img{
-        width: 0;
+        width: 100%;
     }
     .contacto .fila{
         display: block;
@@ -788,49 +840,41 @@ footer .arriba {
     .contacto .fila .col{
         width: 100%;
     }
-    .swiper {
-        width: 100%;
-        height: 100%;
+    .contenedor-header header .logo a {
+        font-size: 20px; /* Ajuste del tamaño de fuente para pantallas pequeñas */
     }
-    
-    .swiper-slide {
-        position: relative;
+
+    .inicio .contenido-banner {
+        padding: 10px;
     }
-    
+
+    .sobremi .fila .col .contenedor-intereses .interes {
+        width: 60px; /* Ajuste del tamaño para pantallas más pequeñas */
+        height: 60px;
+    }
+
+    .portfolio .galeria .proyecto {
+        margin-bottom: 20px; /* Añade un margen inferior para separar los proyectos */
+    }
+    .swiper-slide h3 {
+        color: #fff;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 10px;
+        text-transform: uppercase;
+        margin: 0;
+    }
     .swiper-slide .titulo-container {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, -51%);
         width: 100%;
         height: 100%;
         background-color: rgba(33, 25, 81, 0.7); /* Fondo semi-transparente para hacer el texto más legible */
-        padding: 150px;
+        padding: 100px;
         text-align: center;
         opacity: 0;
         transition: opacity 0.3s ease;
-    }
-    
-    .swiper-slide:hover .titulo-container {
-        opacity: 1;
-    }
-    
-    .swiper-slide h3 {
-        color: #fff;
-        font-family: 'Roboto Condensed', sans-serif;
-        font-size: 8px;
-        text-transform: uppercase;
-        margin: 0;
-    }
-    
-    .swiper-slide:hover h3 {
-        opacity: 1; /* Mostrar el título al pasar el cursor sobre la imagen */
-    }
-    
-    .swiper-slide img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 5px;
+        border-radius: 16px;
     }
 }
