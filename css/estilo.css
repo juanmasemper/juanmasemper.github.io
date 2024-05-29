@@ -878,3 +878,15 @@ footer .arriba {
         border-radius: 16px;
     }
 }
+@media (max-width: 600px) {
+    #container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+    }
+}
