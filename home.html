@@ -82,11 +82,15 @@
                             (+54) 221-5703572
                         </li>
                         <li>
-                            <div id="container">
+                            <div id="emailContainer">
                                 <strong>Email</strong>
-                                <p id="myText">juanmanuelsemper@gmail.com</p>
-                                 <button onclick="copyText()"><i class="fa-solid fa-copy"></i></button>
+                                <p id="myText">juanmanuelsemper@gmail.com</p> <!-- Aquí iría el email -->
+                                <button onclick="copyText()"><i class="fa-solid fa-copy"></i></button>
+                            </div>
                                 <script src="js/copiarMail.js"></script>
+                                <script src="js/copiarMail.js"></script>
+                            </div>
+                            <script src="js/copiarMail.js"></script>
                             </div>
                         </li>
                         <li>
@@ -373,40 +377,52 @@
     <section id="portfolio" class="portfolio">
         <div class="contenido-seccion">
             <h2>PORTFOLIO</h2>
-                <div class="images">
-                    <div class="swiper mySwiper">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="css/images/project.PNG" alt="project">
-                                <div class="titulo-container">
-                                    <h3>Proyecto personal</h3>
-                                </div>
+            <div class="images">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="css/images/project.PNG" alt="project">
+                            <div class="titulo-container">
+                                <h3>Proyecto personal</h3>
                             </div>
-                            <div class="swiper-slide">
-                                <img src="css/images/agremiacionOdontologica1.PNG" alt="agremiacionOdontologica1">
-                                <div class="titulo-container">
-                                    <h3>1ra Parte - Agremiación Odontológica</h3>
-                                </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="css/images/agremiacionOdontologica1.PNG" alt="agremiacionOdontologica1">
+                            <div class="titulo-container">
+                                <h3>1ra Parte - Agremiación Odontológica</h3>
                             </div>
-                            <div class="swiper-slide">
-                                <img src="css/images/agremiacionOdontologica2.PNG" alt="agremiacionOdontologica2">
-                                <div class="titulo-container">
-                                    <h3>2da Parte - Agremiación Odontológica</h3>
-                                </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="css/images/agremiacionOdontologica2.PNG" alt="agremiacionOdontologica2">
+                            <div class="titulo-container">
+                                <h3>2da Parte - Agremiación Odontológica</h3>
                             </div>
-                            <div class="swiper-slide">
-                                <img src="css/images/123123.PNG" alt="ojota">
-                                <div class="titulo-container">
-                                    <h3>Pagina de Consultora de inversiones</h3>
-                                </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="css/images/123123.PNG" alt="ojota">
+                            <div class="titulo-container">
+                                <h3>Página de Consultora de inversiones</h3>
                             </div>
                         </div>
                     </div>
-                </div>  <!-- El link de esto es: https://swiperjs.com/get-started -->
-                <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-                <script src="js/slider.js"></script>                 
+                    <!-- Botones de navegación -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
         </div>
         
+        <!-- Scripts de Swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script>
+            var swiper = new Swiper('.mySwiper', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                loop: true,  // Hace que el slider sea cíclico
+            });
+        </script>
     </section>
     <!-- SECCION CONTACTO -->
     <section id="contacto" class="contacto">
@@ -427,25 +443,6 @@
                             <span class="overlay"></span>
                         </button>
                     </form>
-                </div>
-                <br><br><br>
-                <div class="col">
-                    <div class="info">
-                        <ul>
-                            <li>
-                                <i class="fa-solid fa-location-dot"></i>
-                                Reuniones: Av. del Petroleo Argentino 417, Berisso, Provincia de Buenos Aires
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-mobile-screen"></i>
-                                Llamame: (+54) 221-5703572
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: juanmanuelsemper@gmail.com
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>

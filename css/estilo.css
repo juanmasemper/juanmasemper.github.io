@@ -1,22 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Work+Sans:wght@100;300;400;600;800&display=swap');
-*{
+
+* {
     box-sizing: border-box;
-    font-family: 'Work Sans';
+    font-family: 'Work Sans', sans-serif;
     margin: 0;
     padding: 0;
 }
+
 body {
     margin: 0;
     padding: 0;
     width: 100%;
     overflow-x: hidden;
 }
-html{
-    /* me permite deslizar cuando hago clic en los links del menu */
+
+html {
     scroll-behavior: smooth;
 }
+
 /* MENU */
-.contenedor-header{
+.contenedor-header {
     background: #211951;
     position: fixed;
     width: 100%;
@@ -25,65 +28,70 @@ html{
     z-index: 99;
     box-shadow: 0 16px 8px -9px #836FFF;
 }
-.contenedor-header header{
+
+.contenedor-header header {
     max-width: 1100px;
     margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
-    
 }
-.contenedor-header header .logo a{
-    font-family: 'Righteous';
-    font-size: 36px; /* Ajuste del tamaño de fuente para pantallas pequeñas */
+
+.contenedor-header header .logo a {
+    font-family: 'Righteous', sans-serif;
+    font-size: 36px;
     color: #836FFF;
     text-decoration: none;
 }
-.contenedor-header header ul{
+
+.contenedor-header header ul {
     display: flex;
     list-style: none;
 }
-.contenedor-header header nav ul li a{
-    text-align: none;
+
+.contenedor-header header nav ul li a {
     color: #fff;
     margin: 0 15px;
     padding: 3px;
     transition: .5s;
     text-decoration: none;
 }
-.contenedor-header header nav ul li a:hover{
+
+.contenedor-header header nav ul li a:hover {
     color: #836FFF;
 }
-.nav-responsive{
+
+.nav-responsive {
     background-color: #836FFF;
-    color:#fff;
+    color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
     display: none;
 }
-/* SECCION I N I C I O */
-.inicio{
-    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-    url(images/fondo.png);
+
+/* SECCION INICIO */
+.inicio {
+    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)), url(images/fondo.png);
     background-size: cover;
     height: 115vh;
     color: #fff;
     display: flex;
     align-items: center;
 }
-.inicio .contenido-banner{
+
+.inicio .contenido-banner {
     padding: 32px;
     background-color: #211951;
     max-width: 350px;
     max-height: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     text-align: center;
     border-radius: 40px;
 }
-.inicio .contenido-banner img{
+
+.inicio .contenido-banner img {
     margin-top: 40px;
     border: 10px solid #fff;
     display: block;
@@ -94,7 +102,7 @@ html{
 .inicio .contenido-banner h1{
     margin-top: 40px;
     font-size: 42px;
-    font-family: 'Righteous';
+    font-family: 'Righteous', sans-serif;
 }
 .inicio .contenido-banner h2{
     font-size: 15px;
@@ -118,70 +126,91 @@ html{
 }
 
 /* SECCION SOBRE MI */
-#container {
+#emailContainer {
     display: flex;
-    align-items: center;
+    align-items: center; /* Para alinear verticalmente */
 }
+
+#emailContainer strong {
+    margin-right: 10px; /* Espacio entre "Email" y el contenido */
+}
+
 #myText {
-    margin: 0;
-    padding: 0;
+    margin: 0 10px 0 0; /* Margen derecho para separar el email del botón */
 }
+
 button {
-    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #fff;
+    cursor: pointer;
 }
 a {
     text-decoration: none;
 }
-.sobremi{
+.sobremi {
     background-color: #1e2326;
     color: #fff;
     padding: 90px 20px;
 }
-.sobremi .contenido-seccion{
+
+.sobremi .contenido-seccion {
     max-width: 1100px;
     margin: auto;
 }
-.sobremi h2{
+
+.sobremi h2 {
     font-size: 48px;
-    font-family: 'Righteous';
+    font-family: 'Righteous', sans-serif;
     text-align: center;
     padding: 20px 0;
 
 }
-.sobremi .contenido-seccion p{
-    font: 18px;
+
+.sobremi .contenido-seccion p {
+    font-size: 18px;
     line-height: 22px;
     margin-bottom: 20px;
 }
-.sobremi .contenido-seccion p span{
+
+.sobremi .contenido-seccion p span {
     color: #836FFF;
     font-weight: bold;
 }
-.sobremi .fila{
+
+.sobremi .fila {
     display: flex;
+    flex-wrap: wrap;
 }
-.sobremi .fila .col{
+
+.sobremi .fila .col {
     width: 100%;
-    margin-bottom: 20px; /* Añade un margen inferior para separar las columnas en pantallas pequeñas */
+    margin-bottom: 20px;
 }
-.sobremi .fila .col h3{
+
+.sobremi .fila .col h3 {
     font-size: 28px;
-    font-family: 'Righteous';
+    font-family: 'Righteous', sans-serif;
     margin-bottom: 25px;
 }
-.sobremi .fila .col ul{
+
+.sobremi .fila .col ul {
     list-style: none;
     font-size: 14px;
 }
-.sobremi .fila .col ul li{
+
+.sobremi .fila .col ul li {
     margin: 12px 0;
 }
-.sobremi .fila .col ul li strong{
+
+.sobremi .fila .col ul li strong {
     display: inline-block;
     color: #836FFF;
     width: 130px;
 }
-.sobremi .fila .col ul li span{
+
+.sobremi .fila .col ul li span {
     background-color: #836FFF;
     padding: 3px;
     font-weight: bold;
@@ -192,8 +221,8 @@ a {
     flex-wrap: wrap;
 }
 .sobremi .fila .col .contenedor-intereses .interes{
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: #252A2E;
     border-radius: 10px;
     margin: 10px; /* Ajuste del margen */
@@ -207,7 +236,7 @@ a {
     background-color: #836FFF;
 }
 .sobremi .fila .col .contenedor-intereses .interes i{
-    font-size: 30px;
+    font-size: 50px;
     margin-bottom: 10px;
 }
 .sobremi button{
@@ -223,7 +252,8 @@ a {
     position: relative;
     z-index: 10;
 }
-.sobremi button .overlay{
+
+.sobremi button .overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -233,44 +263,53 @@ a {
     z-index: -1;
     transition: 1s;
 }
-.sobremi button:hover .overlay{
+
+.sobremi button:hover .overlay {
     width: 100%;
 }
 
 /* SECCION SKILLS */
-.skills{
+.skills {
     background-color: #252A2E;
     color: #fff;
     padding: 90px 20px;
 }
-.skills .contenido-seccion{
+
+.skills .contenido-seccion {
     max-width: 900px;
     margin: auto;
 }
-.skills h2{
+
+.skills h2 {
     font-size: 48px;
-    font-family: 'Righteous';
+    font-family: 'Righteous', sans-serif;
     text-align: center;
     padding: 20px 0;
 }
+
 .skills .fila {
     display: flex;
+    flex-wrap: wrap;
 }
+
 .skills .fila .col {
     width: 100%;
     padding: 0 20px;
-    margin-bottom: 20px; /* Añade un margen inferior para separar las columnas en pantallas pequeñas */
+    margin-bottom: 20px;
 }
+
 .skills .fila .col h3 {
     font-size: 28px;
-    font-family: 'Righteous';
+    font-family: 'Righteous', sans-serif;
     margin-bottom: 25px;
 }
+
 .skills .skill > span {
     font-weight: bold;
     display: block;
     margin-bottom: 10px;
 }
+
 .skills .skill .barra-skill {
     height: 8px;
     width: 100%;
@@ -278,6 +317,7 @@ a {
     position: relative;
     margin-bottom: 30px;
 }
+
 .skills .skill .progreso {
     background-color: #836FFF;
     position: absolute;
@@ -285,6 +325,7 @@ a {
     left: 0;
     height: 8px;
 }
+
 .skills .skill .barra-skill span {
     position: absolute;
     height: 40px;
@@ -437,22 +478,26 @@ a {
 }
 .curriculum h2{
     font-size: 48px;
-    font-family: 'Righteous';
+    font-family: 'Righteous', sans-serif;
     text-align: center;
     padding: 20px 0;
 }
+
 .curriculum .fila {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
+
 .curriculum .fila .col {
     width: 49%;
     padding: 0 20px;
     margin-bottom: 20px;
 }
+
 .curriculum .fila .col h3 {
     font-size: 28px;
-    font-family: 'Righteous';
+    font-family: 'Righteous', sans-serif;
     margin-bottom: 25px;
 }
 .curriculum .fila .izquierda {
@@ -467,21 +512,25 @@ a {
     background-color: #252A2E;
     position: relative;
 }
+
 .curriculum .fila .item h4 {
     font-size: 20px;
     margin-bottom: 10px;
 }
+
 .curriculum .fila .item .casa {
     color: #836FFF;
     font-size: 22px;
     font-weight: bold;
     display: block;
 }
+
 .curriculum .fila .item .fecha {
     display: block;
     color: #836FFF;
     margin-bottom: 10px;
 }
+
 .curriculum .fila .item p {
     line-height: 24px;
 }
@@ -545,13 +594,14 @@ a {
 
 .portfolio h2 {
     font-size: 48px;
-    font-family: 'Righteous', sans-serif; /* Agregar fallback para la fuente */
+    font-family: 'Righteous', sans-serif;
     text-align: center;
     padding: 20px 0;
 }
 
 .portfolio .galeria {
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -571,36 +621,7 @@ a {
     position: relative;
 }
 
-.swiper-slide .titulo-container {
-    position: absolute;
-    top: 49.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    background-color: rgba(33, 25, 81, 0.7); /* Fondo semi-transparente para hacer el texto más legible */
-    padding: 200px;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    border-radius: 18px;
-}
 
-.swiper-slide:hover .titulo-container {
-    opacity: 1;
-}
-
-.swiper-slide h3 {
-    color: #fff;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 24px;
-    text-transform: uppercase;
-    margin: 0;
-}
-
-.swiper-slide:hover h3 {
-    opacity: 1; /* Mostrar el título al pasar el cursor sobre la imagen */
-}
 
 .swiper-slide img {
     width: 100%;
@@ -608,6 +629,24 @@ a {
     object-fit: cover;
     border-radius: 15px;
 }
+
+/* Botones de navegación */
+.swiper-button-prev, .swiper-button-next {
+    color: #000000;  /* Color de las flechas */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after {
+    font-size: 110px;  /* Tamaño de las flechas */
+    color: #000000;  /* Asegura que el color de las flechas sea correcto */
+}
+
 /* SECCION CONTACTO */
 .contacto {
     background-image: url(images/contact_bg.png);
@@ -635,7 +674,7 @@ a {
     display: flex;
 }
 .contacto .col {
-    width: 50%;
+    width: 100%;
     margin-bottom: 20px;
     padding: 10px;
     position: relative;
@@ -777,89 +816,30 @@ footer .arriba {
         flex-direction: column; /* Asegura que las columnas se apilen verticalmente */
     }
 
-    .portfolio .galeria {
-        flex-direction: column; /* Asegura que los proyectos se apilen verticalmente */
-    }
-    .contacto .fila {
-        flex-direction: column; /* Asegura que las columnas se apilen verticalmente */
-    }
-    .swiper-slide h3 {
-        color: #fff;
-        font-family: 'Roboto Condensed', sans-serif;
-        font-size: 10px;
-        text-transform: uppercase;
-        margin: 0;
-    }
-    .swiper-slide .titulo-container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -51%);
+    .curriculum .fila .col,
+    .portfolio .fila .col {
         width: 100%;
-        height: 100%;
-        background-color: rgba(33, 25, 81, 0.7); /* Fondo semi-transparente para hacer el texto más legible */
-        padding: 100px;
-        text-align: center;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        border-radius: 16px;
     }
 }
-@media screen and (max-width:700px){
-    .sobremi .fila{
-        display: block;
-    }
-    .sobremi .fila .col{
-        width: fit-content;
+
+@media screen and (max-width: 480px) {
+    .inicio .contenido-banner h1 {
+        font-size: 32px;
     }
 
-    .skills .fila{
-        display: block;
-    }
-    .skills .fila .col{
-        width: 100%;
-    }
-    .skills .fila .col .barra-skill{
-        width: 100%;
+    .sobremi h2 {
+        font-size: 32px;
     }
 
-    .curriculum .fila{
-        display: block;
-    }
-    .curriculum .fila .col{
-        width: 90%;
-    }
-    .curriculum .fila .derecha{
-        margin-left: 20px;
+    .sobremi .contenido-seccion p {
+        font-size: 14px;
+        line-height: 20px;
     }
 
-    .portfolio .galeria{
-        display: block;
-        width: 100%;
-    }
-    .portfolio .galeria .proyecto{
-        max-width: 100%;
-    }
-    .portfolio .galeria .proyecto img{
-        width: 100%;
-    }
-    .contacto .fila{
-        display: block;
-    }
-    .contacto .fila .col{
-        width: 100%;
-    }
-    .contenedor-header header .logo a {
-        font-size: 20px; /* Ajuste del tamaño de fuente para pantallas pequeñas */
-    }
-
-    .inicio .contenido-banner {
-        padding: 10px;
-    }
-
-    .sobremi .fila .col .contenedor-intereses .interes {
-        width: 60px; /* Ajuste del tamaño para pantallas más pequeñas */
-        height: 60px;
+    .skills h2,
+    .curriculum h2,
+    .portfolio h2 {
+        font-size: 32px;
     }
 
     .portfolio .galeria .proyecto {
