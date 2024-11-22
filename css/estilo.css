@@ -711,33 +711,6 @@ button:hover .shadow .outline .border .background .foreground a {
     padding: 0 40px; /* remove padding to make the marquee wider */
   }
   
-  .marquee-wrapper h1 {
-    text-align: center;
-    margin-bottom: 40px;
-    color: #212529;
-    font-size: 2.5rem;
-    font-weight: 700;
-    letter-spacing: -0.5px;
-  }
-  
-  .image-marquee {
-    margin-bottom: 60px;
-    background: white;
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
-      0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  }
-  
-  .image-marquee h2 {
-    margin-bottom: 20px;
-    color: #343a40;
-    font-size: 1.5rem;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-  }
   
   .marquee-container {
     position: relative;
@@ -745,9 +718,8 @@ button:hover .shadow .outline .border .background .foreground a {
     overflow: hidden;
     background: #fff;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin: 0 auto;
-    transition: height 0.3s ease;
+    transition: height 1.3s ease;
   }
   
   .marquee-track {
@@ -841,18 +813,14 @@ button:hover .shadow .outline .border .background .foreground a {
     }
   
     .marquee-container {
-      background: rgb(255 255 255 / 0.05);
+      background: rgb(255 255 255 / 0.02);
     }
   
     .marquee-loading {
-      background: rgb(255 255 255 / 0.05);
+      background: rgb(255 255 255 / 0.02);
     }
   }
-  
-  
-  
-  /* Add a cool fade: */
-  
+
    .marquee-wrapper {
       max-width: 100%;
       margin: 0 auto;
@@ -864,7 +832,7 @@ button:hover .shadow .outline .border .background .foreground a {
       width: 100%;
       overflow: hidden;
       border-radius: 0px;
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 8px 30px rgb(93, 0, 243);
       margin: 0 auto;
       transition: height 0.3s ease;
   }
@@ -879,64 +847,6 @@ button:hover .shadow .outline .border .background .foreground a {
       z-index: 2;
       pointer-events: none;
   }
-  
-  .marquee-container::before {
-      left: 0;
-      background: linear-gradient(to right, 
-          rgba(255, 255, 255, 1) 0%, 
-          rgba(255, 255, 255, 0.95) 20%,
-          rgba(255, 255, 255, 0.85) 40%,
-          rgba(255, 255, 255, 0.5) 60%,
-          rgba(255, 255, 255, 0.2) 80%,
-          rgba(255, 255, 255, 0) 100%
-      );
-  }
-  
-  .marquee-container::after {
-      right: 0;
-      background: linear-gradient(to left, 
-          rgba(255, 255, 255, 1) 0%, 
-          rgba(255, 255, 255, 0.95) 20%,
-          rgba(255, 255, 255, 0.85) 40%,
-          rgba(255, 255, 255, 0.5) 60%,
-          rgba(255, 255, 255, 0.2) 80%,
-          rgba(255, 255, 255, 0) 100%
-      );
-  }
-  
-  @media (prefers-color-scheme: dark) {
-      .marquee-container::before {
-          background: linear-gradient(to right, 
-              rgba(15, 14, 14, 1) 0%,
-              rgba(15, 14, 14, 0.95) 20%,
-              rgba(15, 14, 14, 0.85) 40%,
-              rgba(15, 14, 14, 0.5) 60%,
-              rgba(15, 14, 14, 0.2) 80%,
-              rgba(15, 14, 14, 0) 100%
-          );
-      }
-  
-      .marquee-container::after {
-          background: linear-gradient(to left, 
-              rgba(15, 14, 14, 1) 0%,
-              rgba(15, 14, 14, 0.95) 20%,
-              rgba(15, 14, 14, 0.85) 40%,
-              rgba(15, 14, 14, 0.5) 60%,
-              rgba(15, 14, 14, 0.2) 80%,
-              rgba(15, 14, 14, 0) 100%
-          );
-      }
-  } 
-  
-  
-  
-  
-  
-  
-  
-  /* cool fade in animation: */
-  
-  
   
   @keyframes smoothBounceIn {
       0% {
@@ -1019,12 +929,6 @@ button:hover .shadow .outline .border .background .foreground a {
       backface-visibility: hidden;
   }
   
-  .image-marquee h2 {
-      opacity: 0;
-      will-change: transform, opacity;
-      animation: slideInLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
-      backface-visibility: hidden;
-  }
   
   .marquee-container {
       opacity: 0;
