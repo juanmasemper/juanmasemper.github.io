@@ -386,27 +386,27 @@
     </section>
     <!-- SECCION CONTACTO -->
     <section id="contacto" class="contacto">
-        <div class="contenido-seccion">
-            <h2>CONTACTO</h2>
-            <h4>Actualmente, no se encuentra disponible enviarme mensajes. ¡Si se puede probar su funcionalidad!</h4>
-            <div class="fila">
-                <!-- Formulario -->
-                <div class="col">
-                    <form id="contactForm">
-                        <input type="text" name="name" placeholder="Tu Nombre" required>
-                        <input type="text" name="phone" placeholder="Número Telefónico" required>
-                        <input type="email" name="email" placeholder="Dirección de correo" required>
-                        <input type="text" name="subject" placeholder="Tema" required>
-                        <textarea name="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
-                        <button type="submit">
-                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
-                            <span class="overlay"></span>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+      <div class="contenido-seccion">
+          <h2>CONTACTO</h2>
+          <h4>Nueva funcionalidad disponible! Ahora se puede enviar un correo electrónico directamente desde la página web.</h4>
+          <div class="fila">
+              <!-- Formulario -->
+              <div class="col">
+                  <form id="contactForm" action="https://formspree.io/f/xwpkqdvb" method="POST">
+                      <input type="text" name="name" placeholder="Tu Nombre" required>
+                      <input type="text" name="phone" placeholder="Número Telefónico" required>
+                      <input type="email" name="email" placeholder="Dirección de correo" required>
+                      <input type="text" name="subject" placeholder="Tema" required>
+                      <textarea name="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                      <button type="submit">
+                          Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                          <span class="overlay"></span>
+                      </button>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </section>  
     
     <!-- FOOTER -->
     <footer>
