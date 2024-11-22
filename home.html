@@ -23,42 +23,74 @@
 <body>
     <!-- MENU ENCABEZADO -->
     <div class="contenedor-header">
-        <header>
-            <div class="logo">
-                <a href="#">JUAN MANUEL</a>
-            </div>
-            <nav id="nav">
-                <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
-                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
-                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
-                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
-                </ul>
-            </nav>
-            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
-                <i class="fa-solid fa-bars"></i>
-            </div>
-        </header>
+      <header>
+          <div class="logo">
+              <a href="#">JUAN MANUEL</a>
+          </div>
+          <nav id="nav">
+              <ul>
+                  <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                  <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                  <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                  <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                  <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                  <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+              </ul>
+          </nav>
+          <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+              <i class="fa-solid fa-bars"></i>
+          </div>
+      </header>
     </div>
+
     <!-- SECCION INICIO -->
     <section id="inicio" class="inicio">
-        <div class="contenido-banner">
-            <div class="contenedor-img">
-                <img src="css/images/JuanmaFoto.png" alt="">
-            </div>
-            <h1>Juan Semper</h1>
-            <h2>Alumno avanzado en Ingeniería en Sistemas.</h2>
-            <div class="redes">
-                <a href="https://www.instagram.com/juanmasemper_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.facebook.com/juanma.semper?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://discord.gg/AncFFCnM" target="_blank"><i class="fa-brands fa-discord"></i></a>
-                <a href="https://www.linkedin.com/in/juan-manuel-semper/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/juanmasemper" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </div>
-        </div>
+      <div class="contenido-banner">
+          <div class="contenedor-img">
+              <img src="css/images/JuanmaFoto.png" alt="">
+          </div>
+          <h1 class="letter-animation">Juan Semper</h1>
+          <h2 class="letter-animation">Alumno avanzado en Ingeniería en Sistemas.</h2>
+          <div class="redes">
+              <a href="https://www.instagram.com/juanmasemper_/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.facebook.com/juanma.semper?locale=es_LA" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+              <a href="https://discord.gg/AncFFCnM" target="_blank"><i class="fa-brands fa-discord"></i></a>
+              <a href="https://www.linkedin.com/in/juan-manuel-semper/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="https://github.com/juanmasemper" target="_blank"><i class="fa-brands fa-github"></i></a>
+          </div>
+      </div>
     </section>
+
+
+    <!-- Provisional hasta ver si funciona como me gusta -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          const titles = document.querySelectorAll('.letter-animation');
+          
+          titles.forEach(title => {
+              const text = title.textContent;
+              title.innerHTML = ''; // Limpiar el contenido original
+  
+              // Crear un span para cada letra y espacio
+              text.split('').forEach((letter, index) => {
+                  const span = document.createElement('span');
+                  span.textContent = letter === ' ' ? '\u00A0' : letter; // Usar un espacio no rompible
+                  span.style.display = 'inline-block'; // Para que se pueda animar
+                  span.style.opacity = '0'; // Inicialmente invisible
+                  title.appendChild(span);
+  
+                  // Añadir la animación
+                  setTimeout(() => {
+                      span.style.opacity = '1'; // Hacer visible
+                      span.style.transform = 'translateY(-10px)'; // Desplazar hacia arriba
+                      span.style.transition = 'transform 0.3s ease, opacity 0.3s ease';
+                      span.style.transform = 'translateY(0)'; // Volver a la posición original
+                  }, index * 100); // Retraso basado en el índice
+              });
+          });
+      });
+    </script>
+
     <!-- SECCION SOBRE MI -->
     <section id="sobremi" class="sobremi">
         <div class="contenido-seccion">
