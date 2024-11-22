@@ -430,7 +430,7 @@ a {
     }
   
     button .shadow .outline .border .background .foreground {
-      padding: 15px 30px; /* Ajusta el padding para móviles si es necesario */
+      padding: 25px 40px; /* Ajusta el padding para móviles si es necesario */
     }
   }
   
