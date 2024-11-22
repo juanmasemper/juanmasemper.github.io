@@ -29,13 +29,13 @@ function efectoHabilidades(){
         habilidades[4].classList.add("cyc");
         habilidades[5].classList.add("apirest");
         habilidades[6].classList.add("azuree");
-        habilidades[7].classList.add("rdp");
-        habilidades[8].classList.add("comunicacion");
-        habilidades[9].classList.add("teq");
-        habilidades[10].classList.add("creatividad");
-        habilidades[11].classList.add("adap");
-        habilidades[12].classList.add("dedicacion");
-        habilidades[13].classList.add("devops");
+        habilidades[7].classList.add("devops");
+        habilidades[8].classList.add("rdp");
+        habilidades[9].classList.add("comunicacion");
+        habilidades[10].classList.add("teq");
+        habilidades[11].classList.add("creatividad");
+        habilidades[12].classList.add("adap");
+        habilidades[13].classList.add("dedicacion");
     }
 }
 //Detecta el scrolling para aplicar la animacion de la barra de habilidades

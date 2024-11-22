@@ -452,7 +452,7 @@ button:hover .shadow .outline .border .background .foreground a {
 }
 @keyframes javascript {
     0%{width: 0%;}
-    100%{width: 50%;}
+    100%{width: 70%;}
 }
 
 .skills .skill .htmlcss {
@@ -461,7 +461,7 @@ button:hover .shadow .outline .border .background .foreground a {
 }
 @keyframes htmlcss {
     0%{width: 0%;}
-    100%{width: 88%;}
+    100%{width: 100%;}
 }
 
 .skills .skill .python {
@@ -470,7 +470,7 @@ button:hover .shadow .outline .border .background .foreground a {
 }
 @keyframes python {
     0%{width: 0%;}
-    100%{width: 70%;}
+    100%{width: 90%;}
 }
 
 .skills .skill .oop {
@@ -506,16 +506,23 @@ button:hover .shadow .outline .border .background .foreground a {
 }
 @keyframes azuree {
     0%{width: 0%;}
-    100%{width: 30%;}
+    100%{width: 75%;}
 }
-
+.skills .skill .devops {
+    width: 0%;
+    animation: 2s devops forwards;
+}
+@keyframes devops {
+    0%{width: 0%;}
+    100%{width: 80%;}
+}
 .skills .skill .rdp {
     width: 0%;
     animation: 2s rdp forwards;
 }
 @keyframes rdp {
     0%{width: 0%;}
-    100%{width: 80%;}
+    100%{width: 99%;}
 }
 
 .skills .skill .comunicacion {
@@ -524,7 +531,7 @@ button:hover .shadow .outline .border .background .foreground a {
 }
 @keyframes comunicacion {
     0%{width: 0%;}
-    100%{width: 90%;}
+    100%{width: 99%;}
 }
 
 .skills .skill .teq {
@@ -551,7 +558,7 @@ button:hover .shadow .outline .border .background .foreground a {
 }
 @keyframes adap {
     0%{width: 0%;}
-    100%{width: 60%;}
+    100%{width: 80%;}
 }
 
 .skills .skill .dedicacion {
@@ -563,14 +570,6 @@ button:hover .shadow .outline .border .background .foreground a {
     100%{width: 100%;}
 }
 
-.skills .skill .devops {
-    width: 0%;
-    animation: 2s devops forwards;
-}
-@keyframes devops {
-    0%{width: 0%;}
-    100%{width: 50%;}
-}
 
 /* SECCION CURRICULUM */
 .curriculum{
@@ -1049,6 +1048,7 @@ button:hover .shadow .outline .border .background .foreground a {
     cursor: pointer;
     background-color: transparent;
     border: 2px solid #fff;
+    border-radius: 2px;
     width: fit-content;
     display: block;
     margin: 20px auto;
