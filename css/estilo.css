@@ -314,7 +314,7 @@ button .shadow .outline .border .background .foreground svg {
 }
 
 button .shadow .outline .border .background .foreground a {
-  background: linear-gradient(to right, #6a6a6a, #3f3f3f);
+  background: white;
   background-clip: text;
   font-size: 16px;  /* Reducido el tamaño del texto */
   font-weight: 700;
