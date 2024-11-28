@@ -83,6 +83,18 @@ html {
     animation: fadeIn 1s ease-in-out;
 }
 
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .inicio {
+        background-size: cover; /* O 100% 100% para ajustar */
+        background-repeat: no-repeat;
+        background-position: center; /* Centra la imagen */
+        height: auto; /* Permitir que la altura se ajuste automáticamente */
+        min-height: 100vh; /* Asegurarse de que al menos ocupe toda la altura de la pantalla */
+        
+    }
+}
+
 .inicio .contenido-banner {
     padding: 32px;
     background-color: rgba(33, 25, 81, 0.8);
