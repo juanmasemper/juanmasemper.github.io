@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560">
+  <rect width="100%" height="100%" fill="#071022" rx="12"/>
+  <rect x="28" y="28" width="744" height="504" fill="#081227" rx="8"/>
+  <text x="50%" y="40%" dominant-baseline="middle" text-anchor="middle" font-family="Poppins, Arial" font-weight="700" font-size="28" fill="#fff">Certificado</text>
+  <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, Arial" font-size="18" fill="#cbd5e1">Desarrollador Frontend</text>
+  <text x="50%" y="64%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, Arial" font-size="14" fill="#94a3b8">CoderHouse — 2025</text>
+  <circle cx="700" cy="480" r="28" fill="#6a32fc" />
+</svg>
