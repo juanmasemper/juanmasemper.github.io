@@ -1,4 +1,5 @@
 import React from 'react'
+import { useLanguage } from '../i18n'
 
 const CDN_BASE = 'https://cdn.jsdelivr.net/npm/simple-icons@9.18.0/icons/'
 const SLUG_MAP = {
@@ -46,6 +47,7 @@ function IconInline({name}){
 }
 
 export default function Skills(){
+  const {t} = useLanguage()
   const tech = {
     Languages: ['Python','JavaScript','TypeScript','Java','PHP','SQL'],
     Frontend: ['React','Angular','Vue.js','HTML5','CSS3','Sass','Bootstrap','Tailwind'],
@@ -81,7 +83,7 @@ export default function Skills(){
   },[])
   return (
     <section id="skills" className="skills">
-      <h2>Stack técnico</h2>
+      <h2>{t.skills.title}</h2>
       <div className="tech-grid">
         {Object.entries(tech).map(([group, items]) => (
           <div key={group} className="tech-col">
@@ -104,7 +106,7 @@ export default function Skills(){
         ))}
       </div>
 
-      <h3 style={{marginTop:18}}>Habilidades blandas</h3>
+      <h3 style={{marginTop:18}}>{t.skills.soft}</h3>
       <ul className="soft-list">
         {soft.map(s=> <li key={s}>{s}</li>)}
       </ul>

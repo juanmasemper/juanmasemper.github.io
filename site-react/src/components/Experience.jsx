@@ -1,5 +1,6 @@
 import React from 'react'
 import { IconInline } from './Skills'
+import { useLanguage } from '../i18n'
 
 function LocalIcon({type}){
   const common = {width:36,height:36,viewBox:'0 0 24 24',xmlns:'http://www.w3.org/2000/svg',style:{display:'block'}}
@@ -45,10 +46,11 @@ const WORK_ICON_MAP = {
 }
 
 export default function Experience(){
+  const {t} = useLanguage()
   const education = [
     {title:'Bachiller en Cs. Sociales', where:'Colegio del Centenario', when:'2013 - 2018'},
-    {title:'Ingeniería en Sistemas', where:'Universidad Tecnológica Nacional La Plata', when:'2019 - En curso'},
-    {title:'Carrera de Desarrollador Frontend', where:'CoderHouse', when:'2025', diplomas: [
+    {title:'Ingeniería en Sistemas', where:'Universidad Tecnológica Nacional La Plata', when:'abril 2019 - julio 2027 (estimado)'},
+    {title:t.experience.course, where:'CoderHouse', when:'agosto 2025 - diciembre 2025', diplomas: [
       {src:'/images/coderhouse-web.png', title:'Desarrollo Web'},
       {src:'/images/coderhouse-js.png', title:'Javascript'},
       {src:'/images/coderhouse-react.png', title:'React JS'}
@@ -59,9 +61,9 @@ export default function Experience(){
   ]
   return (
     <section id="experience" className="experience">
-      <h2>Curriculum</h2>
+      <h2>{t.experience.title}</h2>
       <div className="section-card">
-        <h3>Educación</h3>
+        <h3>{t.experience.education}</h3>
         <div className="project-grid">
           {education.map((e,i) => (
             <div className="project" key={e.title} style={{transitionDelay: `${i * 60}ms`}}>
@@ -80,7 +82,7 @@ export default function Experience(){
         {/* Diplomas as project-like thumbnails */}
         {education.filter(e=>e.diplomas).map(e=> (
           <div key={e.where+"-diplomas"} style={{marginTop:18}}>
-            <h4 style={{marginBottom:10}}>{e.where} — Diplomas</h4>
+            <h4 style={{marginBottom:10}}>{e.where} — {t.experience.diplomas}</h4>
             <div className="project-grid">
               {e.diplomas.map((d, idx) => (
                     <a key={d.src} className="project" href={d.src} target="_blank" rel="noreferrer" style={{transitionDelay:`${idx*40}ms`}}>
@@ -97,7 +99,7 @@ export default function Experience(){
       </div>
 
       <div className="section-card" style={{marginTop:20}}>
-        <h3>Experiencia Laboral</h3>
+        <h3>{t.experience.work}</h3>
         <div className="project-grid">
           {work.map((w,i)=> (
             <div className="project" key={w.title} style={{transitionDelay:`${i*60}ms`}}>
