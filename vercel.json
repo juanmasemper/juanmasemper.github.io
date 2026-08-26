@@ -2,5 +2,5 @@
   "framework": "vite",
   "buildCommand": "npm run build --prefix site-react",
   "outputDirectory": "site-react/dist",
-  "installCommand": "npm install --prefix site-react"
+  "installCommand": "npm install --prefix site-react --include=dev"
 }
