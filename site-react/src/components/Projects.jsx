@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import { useLanguage } from '../i18n'
 
 export default function Projects(){
-  const {t} = useLanguage()
+  const {lang, t} = useLanguage()
   const projects = [
     {title: 'CNEISI - Plataforma de inscripciones', desc: 'Congreso Nac. de Estudiantes de Ing. en Sistemas 2024', detail: 'Plataforma full stack para gestionar inscripciones y la organización del congreso.', tags: ['Django', 'REST API', 'JavaScript'], img: '/images/foto2.png', link: 'https://www.frlp.utn.edu.ar/llega-el-cneisi-la-utn-la-plata'},
     {title: 'Agremiación Odontológica', desc: 'Proyecto para la materia de Diseño de Sistemas / demo', detail: 'Sitio web de presentación para una institución profesional, con foco en claridad y navegación.', tags: ['HTML', 'CSS', 'JavaScript'], img: '/images/agremiacionOdontologica1.PNG', link: ''},
-    {title: 'JotaStore', desc: 'E-commerce de indumentaria urbana', detail: 'Tienda online con catálogo de productos, filtros, detalle de artículos y carrito de compras.', tags: ['React', 'Vite', 'E-commerce'], img: '/images/jotastore-image.png', link: 'https://ojotastore.vercel.app/'}
+    {title: 'JotaStore', desc: 'E-commerce de indumentaria urbana · Proyecto realizado para el curso de Desarrollador Front-end de CoderHouse', descEn: 'Urban fashion e-commerce · Project developed for the CoderHouse Front-end Developer course', detail: 'Tienda online con catálogo de productos, filtros, detalle de artículos y carrito de compras, realizada para el curso de Desarrollador Front-end de CoderHouse.', detailEn: 'Online store with a product catalog, filters, item details, and shopping cart, developed for the CoderHouse Front-end Developer course.', tags: ['React', 'Vite', 'E-commerce'], img: '/images/jotastore-image.png', link: 'https://ojotastore.vercel.app/'}
   ]
   const filters = [{key:'all', label:t.projects.all}, ...Array.from(new Set(projects.flatMap(project => project.tags)), tag => ({key:tag, label:tag}))]
   const [filter, setFilter] = useState('all')
@@ -29,7 +29,7 @@ export default function Projects(){
               <div className="thumb" style={{backgroundImage: `url(${p.img})`}} aria-hidden />
               <div className="info">
                 <strong>{p.title}</strong>
-                <div className="desc">{p.desc}</div>
+                <div className="desc">{lang === 'en' && p.descEn ? p.descEn : p.desc}</div>
                 <div className="project-tags">{p.tags.map(tag => <span key={tag}>{tag}</span>)}</div>
               </div>
             </button>
@@ -42,7 +42,7 @@ export default function Projects(){
             <button type="button" className="modal-close" aria-label={t.projects.close} onClick={() => setSelectedProject(null)}>×</button>
             <img src={selectedProject.img} alt="" />
             <h3 id="project-modal-title">{selectedProject.title}</h3>
-            <p>{selectedProject.detail}</p>
+            <p>{lang === 'en' && selectedProject.detailEn ? selectedProject.detailEn : selectedProject.detail}</p>
             <div className="project-tags">{selectedProject.tags.map(tag => <span key={tag}>{tag}</span>)}</div>
             {selectedProject.link && <a className="modal-link" href={selectedProject.link} target="_blank" rel="noreferrer">{t.projects.link}</a>}
           </div>
