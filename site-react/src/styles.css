@@ -40,8 +40,6 @@ section{margin-top:28px}
 .project:hover .thumb img{transform:scale(1.08)}
 .project .info{flex:1}
 .project .desc{color:var(--muted);font-size:13px;margin-top:6px}
-.project[style]{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s cubic-bezier(.2,.9,.3,1)}
-.project[style].is-visible{opacity:1;transform:none}
 /* Social links: quitar subrayado y añadir underline animado + float */
 .socials a, .links a, .contact a{color:var(--muted);margin-right:8px;text-decoration:none;position:relative;transition:color .22s ease,transform .18s}
 .socials a::after, .links a::after, .contact a::after{content:'';position:absolute;left:0;right:0;bottom:-3px;height:3px;background:linear-gradient(90deg,var(--accent), #9b6bff);transform:scaleX(0);transform-origin:left;transition:transform .32s cubic-bezier(.2,.9,.3,1);border-radius:3px}
