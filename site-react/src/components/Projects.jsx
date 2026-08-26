@@ -5,7 +5,8 @@ export default function Projects(){
   const {t} = useLanguage()
   const projects = [
     {title: 'CNEISI - Plataforma de inscripciones', desc: 'Congreso Nac. de Estudiantes de Ing. en Sistemas 2024', detail: 'Plataforma full stack para gestionar inscripciones y la organización del congreso.', tags: ['Django', 'REST API', 'JavaScript'], img: '/images/foto2.png', link: 'https://www.frlp.utn.edu.ar/llega-el-cneisi-la-utn-la-plata'},
-    {title: 'Agremiación Odontológica', desc: 'Proyecto para la materia de Diseño de Sistemas / demo', detail: 'Sitio web de presentación para una institución profesional, con foco en claridad y navegación.', tags: ['HTML', 'CSS', 'JavaScript'], img: '/images/agremiacionOdontologica1.PNG', link: ''}
+    {title: 'Agremiación Odontológica', desc: 'Proyecto para la materia de Diseño de Sistemas / demo', detail: 'Sitio web de presentación para una institución profesional, con foco en claridad y navegación.', tags: ['HTML', 'CSS', 'JavaScript'], img: '/images/agremiacionOdontologica1.PNG', link: ''},
+    {title: 'JotaStore', desc: 'E-commerce de indumentaria urbana', detail: 'Tienda online con catálogo de productos, filtros, detalle de artículos y carrito de compras.', tags: ['React', 'Vite', 'E-commerce'], img: '/images/jotastore-image.png', link: 'https://ojotastore.vercel.app/'}
   ]
   const filters = [{key:'all', label:t.projects.all}, ...Array.from(new Set(projects.flatMap(project => project.tags)), tag => ({key:tag, label:tag}))]
   const [filter, setFilter] = useState('all')
