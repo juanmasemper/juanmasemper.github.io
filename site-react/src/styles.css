@@ -11,6 +11,8 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;margin:0;ba
 :root[data-theme="light"] body{background:linear-gradient(180deg,#eef2f7,#dfe6ef);color:#172033}
 .site-header{display:flex;justify-content:space-between;align-items:center;padding:20px 28px;position:sticky;top:0;z-index:40;background:linear-gradient(180deg, rgba(11,17,32,0.45), transparent);backdrop-filter: blur(6px)}
 .header-actions{display:flex;align-items:center;gap:18px}.theme-toggle{border:1px solid rgba(255,255,255,.12);background:var(--glass);color:inherit;border-radius:50%;width:34px;height:34px;cursor:pointer;font-size:18px}.theme-toggle:hover{transform:rotate(15deg)}
+.menu-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:34px;height:34px;border:1px solid rgba(255,255,255,.12);background:var(--glass);border-radius:8px;cursor:pointer;padding:0}
+.menu-toggle span{display:block;width:16px;height:2px;background:currentColor;margin:0 auto;border-radius:2px}
 .site-header .brand{font-family:Poppins,Inter,sans-serif;font-weight:700;color:var(--accent);letter-spacing:0.4px;display:flex;align-items:center}.site-header .brand img{display:block;width:auto;height:42px;max-width:170px;object-fit:contain}
 .nav a{color:var(--muted);margin-left:18px;text-decoration:none;position:relative;padding:6px 4px}
 .nav a::after{content:'';position:absolute;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),#9b6bff);bottom:0;transform:scaleX(0);transform-origin:left;transition:transform .3s}
@@ -163,4 +165,23 @@ section{margin-top:28px}
   .tech-grid{grid-template-columns:1fr}
 }
 
-@media(max-width:600px){.nav{display:none}.container{margin:20px}}
+@media(max-width:600px){
+  .site-header{padding:16px}
+  .header-actions{gap:10px}
+  .menu-toggle{display:flex}
+  .nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--card);padding:8px 16px;box-shadow:0 12px 24px rgba(2,6,20,.5)}
+  .nav.open{display:flex}
+  .nav a{margin:0;padding:12px 4px;border-bottom:1px solid rgba(255,255,255,.06)}
+  .nav a:last-child{border-bottom:none}
+  .container{margin:16px;padding:16px}
+  .hero{padding:22px 16px}
+  .avatar{width:110px;height:110px}
+  h1{font-size:22px}
+  .section-card{padding:16px}
+  .tech-grid{gap:12px}
+  .project .thumb{width:90px;flex:0 0 90px;height:64px}
+  .project{padding:10px;gap:10px}
+  .project-modal{padding:16px}
+  .project-modal img{height:140px}
+  .exp-sections{padding:8px}
+}

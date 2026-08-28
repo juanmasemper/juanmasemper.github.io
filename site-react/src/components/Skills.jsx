@@ -87,7 +87,7 @@ export default function Skills(){
       <div className="tech-grid">
         {Object.entries(tech).map(([group, items]) => (
           <div key={group} className="tech-col">
-            <h3>{group.replace(/([A-Z])/g, ' $1').trim()}</h3>
+            <h3>{t.techGroups?.[group] || group.replace(/([A-Z])/g, ' $1').trim()}</h3>
             <ul>
               {items.slice().sort((a,b)=> a.localeCompare(b))
                 .filter(it => {
