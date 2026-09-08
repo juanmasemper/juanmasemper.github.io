@@ -1,9 +1,9 @@
 const fs = require('fs')
 const path = require('path')
 
-const src = path.join(__dirname, '..', '..', 'Curriculum Vitae - Semper Juan Manuel.pdf')
+const src = path.join(__dirname, '..', '..', 'Curriculum-Juan-Manuel-Semper.pdf')
 const destDir = path.join(__dirname, '..', 'public')
-const dest = path.join(destDir, 'CV-Semper-Juan-Manuel.pdf')
+const dest = path.join(destDir, 'Curriculum-Juan-Manuel-Semper.pdf')
 
 try{
   if(!fs.existsSync(src)){
