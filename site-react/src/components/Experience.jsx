@@ -10,7 +10,9 @@ const DIPLOMAS = [
 function EduIcon({type}){
   const path = type === 'university'
     ? 'M12 2 2 7v2h2v9h4v-6h4v6h4V9h2V7l-10-5z'
-    : 'M8.7 6.3 3 12l5.7 5.7 1.4-1.4L6.8 12l3.3-3.3-1.4-1.4zm6.6 0-1.4 1.4L17.2 12l-3.3 3.3 1.4 1.4L21 12l-5.7-5.7z'
+    : type === 'school'
+      ? 'M12 2 1 7l11 5 11-5-11-5zm0 7.5L4 8.1V11l8 3.5 8-3.5V8.1L12 9.5z'
+      : 'M8.7 6.3 3 12l5.7 5.7 1.4-1.4L6.8 12l3.3-3.3-1.4-1.4zm6.6 0-1.4 1.4L17.2 12l-3.3 3.3 1.4 1.4L21 12l-5.7-5.7z'
   return <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d={path} /></svg>
 }
 

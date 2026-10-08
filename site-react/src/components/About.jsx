@@ -14,6 +14,7 @@ export default function About(){
     <section id="about" className="about">
       <h2>{t.about.title}</h2>
       <p className="lead">{t.about.text}</p>
+      {t.about.text2 && <p className="lead" style={{marginTop:14}}>{t.about.text2}</p>}
       <div className="info-grid">
         {items.map(([label, value]) => (
           <div key={label} className="info-card tilt" data-tilt="8">

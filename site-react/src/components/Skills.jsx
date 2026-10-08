@@ -7,7 +7,7 @@ const CDN_BASE = 'https://cdn.jsdelivr.net/npm/simple-icons@9.18.0/icons/'
 const TECH = {
   Languages: [['Python','python'],['Java','openjdk'],['JavaScript','javascript'],['TypeScript','typescript'],['PHP','php'],['SQL',null]],
   Backend: [['Django','django'],['Django REST Framework','django'],['Node.js','nodedotjs'],['Express','express'],['Flask','flask'],['Spring Boot','springboot'],['APIs REST',null],['GraphQL','graphql'],['Celery','celery'],['WebSockets',null]],
-  Frontend: [['React','react'],['Angular','angular'],['Vue.js','vuedotjs'],['HTML','html5'],['CSS','css3'],['Sass','sass'],['Bootstrap','bootstrap'],['Tailwind CSS','tailwindcss']],
+  Frontend: [['React','react'],['Angular','angular'],['Vue.js','vuedotjs'],['HTML','html5'],['CSS','css3'],['Sass','sass'],['Bootstrap','bootstrap'],['Tailwind CSS','tailwindcss'],['Figma','figma'],['Adobe XD','adobexd']],
   Data: [['PostgreSQL','postgresql'],['MySQL','mysql'],['MongoDB','mongodb'],['Firebase','firebase'],['SQL avanzado',null],['pandas','pandas'],['NumPy','numpy'],['Power BI','powerbi'],['Power Query',null],['Excel avanzado',null]],
   AI: [['IA generativa',null],['LLMs',null],['Prompt engineering',null],['Embeddings',null],['RAG',null],['ChromaDB',null],['Gemini','googlegemini'],['Hugging Face','huggingface'],['ROUGE',null],['TensorFlow','tensorflow'],['Keras','keras'],['PyTorch','pytorch']],
   DevOps: [['AWS','amazonaws'],['API Gateway','amazonapigateway'],['Docker','docker'],['Kubernetes','kubernetes'],['Git','git'],['GitHub','github'],['GitLab','gitlab'],['CI/CD',null],['Jenkins','jenkins'],['GitHub Actions','githubactions'],['pytest','pytest']]

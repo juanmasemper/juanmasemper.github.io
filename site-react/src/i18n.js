@@ -19,6 +19,7 @@ export const translations = {
     about: {
       title: 'Perfil profesional',
       text: 'Estudiante avanzado de Ingeniería en Sistemas de Información (UTN FRLP, 85% aprobado) con experiencia en desarrollo de software end-to-end, APIs REST, análisis funcional, automatización y datos. Aplico herramientas de IA al desarrollo, aprendizaje y resolución de problemas. Perfil proactivo y analítico, orientado a transformar necesidades del negocio en soluciones tecnológicas.',
+      text2: 'Trabajo de punta a punta: relevamiento con usuarios, análisis de procesos, diseño e implementación de funcionalidades, pruebas y despliegue, con conocimientos académicos de IA generativa y ciencia de datos. Me caracterizan el aprendizaje rápido, la iniciativa y la orientación a resolver necesidades concretas del negocio.',
       data: 'Datos de contacto',
       location: 'Ubicación',
       locationValue: 'La Plata, Buenos Aires, Argentina',
@@ -38,8 +39,8 @@ export const translations = {
       AI: 'IA y automatización',
       DevOps: 'Cloud y DevOps'
     },
-    functionalList: ['Relevamiento de requerimientos', 'Procesos de negocio', 'Documentación', 'Modelado de datos', 'Scrum', 'Kanban'],
-    softList: ['Pensamiento analítico', 'Resolución de problemas', 'Comunicación con usuarios', 'Trabajo en equipo', 'Aprendizaje autónomo'],
+    functionalList: ['Relevamiento de requerimientos', 'Procesos de negocio', 'Reglas de negocio', 'Documentación funcional', 'Modelado de datos', 'Validación con usuarios', 'Scrum', 'Kanban'],
+    softList: ['Pensamiento analítico', 'Resolución de problemas', 'Comunicación con usuarios', 'Comunicación con perfiles técnicos y no técnicos', 'Trabajo en equipo', 'Proactividad', 'Autonomía', 'Criterio de producto', 'Aprendizaje autónomo'],
     experience: {
       title: 'Experiencia y formación',
       work: 'Experiencia profesional',
@@ -48,18 +49,20 @@ export const translations = {
       workItems: [
         {
           title: 'Desarrollador de Software (Pasantía)',
-          where: 'Instituto de Previsión Social (IPS)',
+          where: 'Instituto de Previsión Social (IPS), Provincia de Buenos Aires',
           when: 'Oct 2025 – Jun 2026',
           bullets: [
             'Desarrollo full stack en sistema modular Django (15+ aplicaciones, 40+ endpoints REST): relevamiento de requerimientos, implementación, pruebas con pytest y puesta en producción.',
             'Automatización de conciliaciones, cálculos, notificaciones y reportes con Celery; funcionalidades en tiempo real con WebSockets.',
-            'Gestión de datos críticos, reglas de negocio y trazabilidad; PostgreSQL, Docker y Git.'
+            'Gestión de datos críticos, reglas de negocio y trazabilidad; PostgreSQL, Docker y Git.',
+            'Comunicación con áreas usuarias para comprender circuitos operativos, definir requerimientos y traducirlos en soluciones técnicas.'
           ]
         }
       ],
       educationItems: [
-        { title: 'Ingeniería en Sistemas de Información', where: 'UTN FRLP', when: '85% aprobado · Egreso estimado: 2027', icon: 'university' },
-        { title: 'Desarrollo Frontend', where: 'CoderHouse', when: '2025', icon: 'coderhouse' }
+        { title: 'Bachiller en Cs. Sociales', where: 'Colegio del Centenario', when: '2013 – 2018', icon: 'school' },
+        { title: 'Ingeniería en Sistemas de Información', where: 'UTN FRLP', when: '85% aprobado · Abril 2019 – 2027 (estimado)', desc: 'Programación, estructuras de datos, bases de datos, análisis y diseño de sistemas, arquitectura de software y ciencia de datos.', icon: 'university' },
+        { title: 'Desarrollo Frontend', where: 'CoderHouse', when: 'Agosto – Diciembre 2025', desc: 'HTML, CSS, JavaScript, React, diseño responsive, consumo de APIs y publicación de sitios.', icon: 'coderhouse' }
       ]
     },
     projects: { title: 'Proyectos destacados', intro: 'Más proyectos y demos en mi GitHub:', all: 'Todos', filterLabel: 'Filtrar proyectos por tecnología', link: 'Ver proyecto ↗', close: 'Cerrar detalle' },
@@ -98,6 +101,7 @@ export const translations = {
     about: {
       title: 'Professional profile',
       text: 'Advanced Information Systems Engineering student (UTN FRLP, 85% completed) with experience in end-to-end software development, REST APIs, functional analysis, automation and data. I apply AI tools to development, learning and problem solving. Proactive and analytical profile, focused on turning business needs into technology solutions.',
+      text2: 'I work end to end: gathering requirements with users, process analysis, designing and implementing features, testing and deployment, with academic knowledge of generative AI and data science. Defined by fast learning, initiative and a focus on solving concrete business needs.',
       data: 'Contact details',
       location: 'Location',
       locationValue: 'La Plata, Buenos Aires, Argentina',
@@ -117,8 +121,8 @@ export const translations = {
       AI: 'AI & automation',
       DevOps: 'Cloud & DevOps'
     },
-    functionalList: ['Requirements gathering', 'Business processes', 'Documentation', 'Data modeling', 'Scrum', 'Kanban'],
-    softList: ['Analytical thinking', 'Problem solving', 'Communication with users', 'Teamwork', 'Self-directed learning'],
+    functionalList: ['Requirements gathering', 'Business processes', 'Business rules', 'Functional documentation', 'Data modeling', 'User validation', 'Scrum', 'Kanban'],
+    softList: ['Analytical thinking', 'Problem solving', 'Communication with users', 'Communication with technical and non-technical profiles', 'Teamwork', 'Proactivity', 'Autonomy', 'Product judgment', 'Self-directed learning'],
     experience: {
       title: 'Experience & education',
       work: 'Professional experience',
@@ -127,18 +131,20 @@ export const translations = {
       workItems: [
         {
           title: 'Software Developer (Internship)',
-          where: 'Instituto de Previsión Social (IPS)',
+          where: 'Instituto de Previsión Social (IPS), Province of Buenos Aires',
           when: 'Oct 2025 – Jun 2026',
           bullets: [
             'Full stack development on a modular Django system (15+ applications, 40+ REST endpoints): requirements gathering, implementation, testing with pytest and production release.',
             'Automation of reconciliations, calculations, notifications and reports with Celery; real-time features with WebSockets.',
-            'Management of critical data, business rules and traceability; PostgreSQL, Docker and Git.'
+            'Management of critical data, business rules and traceability; PostgreSQL, Docker and Git.',
+            'Worked with user areas to understand operational flows, define requirements and turn them into technical solutions.'
           ]
         }
       ],
       educationItems: [
-        { title: 'Information Systems Engineering', where: 'UTN FRLP', when: '85% completed · Expected graduation: 2027', icon: 'university' },
-        { title: 'Frontend Development', where: 'CoderHouse', when: '2025', icon: 'coderhouse' }
+        { title: 'Social Sciences High School Diploma', where: 'Colegio del Centenario', when: '2013 – 2018', icon: 'school' },
+        { title: 'Information Systems Engineering', where: 'UTN FRLP', when: '85% completed · April 2019 – 2027 (expected)', desc: 'Programming, data structures, databases, systems analysis and design, software architecture and data science.', icon: 'university' },
+        { title: 'Frontend Development', where: 'CoderHouse', when: 'August – December 2025', desc: 'HTML, CSS, JavaScript, React, responsive design, API consumption and site deployment.', icon: 'coderhouse' }
       ]
     },
     projects: { title: 'Featured projects', intro: 'More projects and demos on my GitHub:', all: 'All', filterLabel: 'Filter projects by technology', link: 'View project ↗', close: 'Close details' },
