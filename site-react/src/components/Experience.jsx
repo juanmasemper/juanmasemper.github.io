@@ -48,7 +48,7 @@ export default function Experience(){
               <strong>{e.title}</strong>
               <div className="where">{e.where}</div>
               <div className="when">{e.when}</div>
-              <p>{e.desc}</p>
+              {e.desc && <p>{e.desc}</p>}
             </div>
           </article>
         ))}

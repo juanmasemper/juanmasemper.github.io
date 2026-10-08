@@ -4,8 +4,8 @@ export const translations = {
   es: {
     nav: { home: 'Inicio', about: 'Perfil', skills: 'Stack', experience: 'Experiencia', projects: 'Proyectos', contact: 'Contacto' },
     hero: {
-      role: 'Estudiante avanzado de Ingeniería en Sistemas',
-      subtitle: 'Desarrollo de Software · Análisis Funcional · Automatización · Datos e IA',
+      role: 'Desarrollador de Software · Ingeniería en Sistemas (UTN)',
+      subtitle: 'Automatización · IA · Datos',
       meta: 'La Plata, Buenos Aires · Disponibilidad full time · presencial / híbrida / remota',
       cv: 'Descargar CV',
       contact: 'Hablemos'
@@ -18,7 +18,7 @@ export const translations = {
     ],
     about: {
       title: 'Perfil profesional',
-      text: 'Estudiante avanzado de Ingeniería en Sistemas de Información (UTN FRLP, 85% aprobado) con experiencia en desarrollo de soluciones web de punta a punta: relevamiento con usuarios, análisis de procesos, diseño e implementación de funcionalidades, pruebas y despliegue. Trabajo con Python, Django, APIs REST, bases de datos y automatización de procesos. Aplico herramientas de inteligencia artificial en el desarrollo, la investigación y la mejora de productividad, con conocimientos académicos de IA generativa y ciencia de datos. Me caracterizan el aprendizaje rápido, la iniciativa y la orientación a resolver necesidades concretas del negocio.',
+      text: 'Estudiante avanzado de Ingeniería en Sistemas de Información (UTN FRLP, 85% aprobado) con experiencia en desarrollo de software end-to-end, APIs REST, análisis funcional, automatización y datos. Aplico herramientas de IA al desarrollo, aprendizaje y resolución de problemas. Perfil proactivo y analítico, orientado a transformar necesidades del negocio en soluciones tecnológicas.',
       data: 'Datos de contacto',
       location: 'Ubicación',
       locationValue: 'La Plata, Buenos Aires, Argentina',
@@ -32,14 +32,14 @@ export const translations = {
     skills: { title: 'Conocimientos técnicos', soft: 'Competencias', functional: 'Análisis funcional y metodologías' },
     techGroups: {
       Languages: 'Lenguajes',
-      Backend: 'Backend e integración',
+      Backend: 'Backend',
       Frontend: 'Frontend',
-      Data: 'Datos y analítica',
-      AI: 'IA y ciencia de datos',
-      DevOps: 'Cloud, DevOps y calidad'
+      Data: 'Datos',
+      AI: 'IA y automatización',
+      DevOps: 'Cloud y DevOps'
     },
-    functionalList: ['Relevamiento de requerimientos', 'Análisis de procesos', 'Reglas de negocio', 'Documentación funcional', 'Validación con usuarios', 'Scrum', 'Kanban'],
-    softList: ['Pensamiento analítico', 'Resolución de problemas', 'Comunicación con perfiles técnicos y no técnicos', 'Trabajo colaborativo', 'Proactividad', 'Autonomía', 'Aprendizaje autodidacta'],
+    functionalList: ['Relevamiento de requerimientos', 'Procesos de negocio', 'Documentación', 'Modelado de datos', 'Scrum', 'Kanban'],
+    softList: ['Pensamiento analítico', 'Resolución de problemas', 'Comunicación con usuarios', 'Trabajo en equipo', 'Aprendizaje autónomo'],
     experience: {
       title: 'Experiencia y formación',
       work: 'Experiencia profesional',
@@ -48,19 +48,18 @@ export const translations = {
       workItems: [
         {
           title: 'Desarrollador de Software (Pasantía)',
-          where: 'Instituto de Previsión Social (IPS), Provincia de Buenos Aires',
+          where: 'Instituto de Previsión Social (IPS)',
           when: 'Oct 2025 – Jun 2026',
           bullets: [
-            'Desarrollo full stack en un sistema modular Django de más de 15 aplicaciones y 40 endpoints REST: relevamiento de necesidades, lógica de negocio, frontend, backend y puesta en producción.',
-            'Automatización de conciliación de archivos, cálculos por lote y notificaciones mediante tareas asíncronas con Celery; funcionalidades en tiempo real con WebSockets.',
-            'Trabajo con datos críticos, validaciones, trazabilidad y generación automatizada de reportes; pruebas con pytest, contenedores Docker y control de versiones.',
-            'Comunicación con áreas usuarias para comprender circuitos operativos, definir requerimientos y traducirlos en soluciones técnicas.'
+            'Desarrollo full stack en sistema modular Django (15+ aplicaciones, 40+ endpoints REST): relevamiento de requerimientos, implementación, pruebas con pytest y puesta en producción.',
+            'Automatización de conciliaciones, cálculos, notificaciones y reportes con Celery; funcionalidades en tiempo real con WebSockets.',
+            'Gestión de datos críticos, reglas de negocio y trazabilidad; PostgreSQL, Docker y Git.'
           ]
         }
       ],
       educationItems: [
-        { title: 'Ingeniería en Sistemas de Información', where: 'Universidad Tecnológica Nacional, FRLP', when: 'En curso · egreso estimado 2027', desc: '85% de la carrera aprobada. Programación, estructuras de datos, bases de datos, análisis y diseño de sistemas, arquitectura de software y ciencia de datos.', icon: 'university' },
-        { title: 'Carrera de Desarrollador Frontend', where: 'CoderHouse', when: '2025', desc: 'HTML, CSS, JavaScript, React, diseño responsive, consumo de APIs y publicación de sitios.', icon: 'coderhouse' }
+        { title: 'Ingeniería en Sistemas de Información', where: 'UTN FRLP', when: '85% aprobado · Egreso estimado: 2027', icon: 'university' },
+        { title: 'Desarrollo Frontend', where: 'CoderHouse', when: '2025', icon: 'coderhouse' }
       ]
     },
     projects: { title: 'Proyectos destacados', intro: 'Más proyectos y demos en mi GitHub:', all: 'Todos', filterLabel: 'Filtrar proyectos por tecnología', link: 'Ver proyecto ↗', close: 'Cerrar detalle' },
@@ -84,8 +83,8 @@ export const translations = {
   en: {
     nav: { home: 'Home', about: 'Profile', skills: 'Stack', experience: 'Experience', projects: 'Projects', contact: 'Contact' },
     hero: {
-      role: 'Advanced Information Systems Engineering student',
-      subtitle: 'Software Development · Functional Analysis · Automation · Data & AI',
+      role: 'Software Developer · Systems Engineering (UTN)',
+      subtitle: 'Automation · AI · Data',
       meta: 'La Plata, Buenos Aires · Available full time · on-site / hybrid / remote',
       cv: 'Download CV',
       contact: 'Get in touch'
@@ -98,7 +97,7 @@ export const translations = {
     ],
     about: {
       title: 'Professional profile',
-      text: 'Advanced Information Systems Engineering student (UTN FRLP, 85% completed) with experience building end-to-end web solutions: gathering requirements with users, process analysis, designing and implementing features, testing and deployment. I work with Python, Django, REST APIs, databases and process automation. I use artificial intelligence tools in development, research and productivity, with academic knowledge of generative AI and data science. Defined by fast learning, initiative and a focus on solving concrete business needs.',
+      text: 'Advanced Information Systems Engineering student (UTN FRLP, 85% completed) with experience in end-to-end software development, REST APIs, functional analysis, automation and data. I apply AI tools to development, learning and problem solving. Proactive and analytical profile, focused on turning business needs into technology solutions.',
       data: 'Contact details',
       location: 'Location',
       locationValue: 'La Plata, Buenos Aires, Argentina',
@@ -112,14 +111,14 @@ export const translations = {
     skills: { title: 'Technical skills', soft: 'Core competencies', functional: 'Functional analysis & methodologies' },
     techGroups: {
       Languages: 'Languages',
-      Backend: 'Backend & integration',
+      Backend: 'Backend',
       Frontend: 'Frontend',
-      Data: 'Data & analytics',
-      AI: 'AI & data science',
-      DevOps: 'Cloud, DevOps & quality'
+      Data: 'Data',
+      AI: 'AI & automation',
+      DevOps: 'Cloud & DevOps'
     },
-    functionalList: ['Requirements gathering', 'Process analysis', 'Business rules', 'Functional documentation', 'User validation', 'Scrum', 'Kanban'],
-    softList: ['Analytical thinking', 'Problem solving', 'Communication with technical and non-technical profiles', 'Teamwork', 'Proactivity', 'Autonomy', 'Self-directed learning'],
+    functionalList: ['Requirements gathering', 'Business processes', 'Documentation', 'Data modeling', 'Scrum', 'Kanban'],
+    softList: ['Analytical thinking', 'Problem solving', 'Communication with users', 'Teamwork', 'Self-directed learning'],
     experience: {
       title: 'Experience & education',
       work: 'Professional experience',
@@ -128,19 +127,18 @@ export const translations = {
       workItems: [
         {
           title: 'Software Developer (Internship)',
-          where: 'Instituto de Previsión Social (IPS), Province of Buenos Aires',
+          where: 'Instituto de Previsión Social (IPS)',
           when: 'Oct 2025 – Jun 2026',
           bullets: [
-            'Full stack development on a modular Django system with 15+ applications and 40 REST endpoints: requirements gathering, business logic, frontend, backend and production release.',
-            'Automated file reconciliation, batch calculations and notifications through asynchronous Celery tasks; real-time features with WebSockets.',
-            'Worked with critical data, validations, traceability and automated report generation; testing with pytest, Docker containers and version control.',
-            'Worked with user areas to understand operational flows, define requirements and turn them into technical solutions.'
+            'Full stack development on a modular Django system (15+ applications, 40+ REST endpoints): requirements gathering, implementation, testing with pytest and production release.',
+            'Automation of reconciliations, calculations, notifications and reports with Celery; real-time features with WebSockets.',
+            'Management of critical data, business rules and traceability; PostgreSQL, Docker and Git.'
           ]
         }
       ],
       educationItems: [
-        { title: 'Information Systems Engineering', where: 'Universidad Tecnológica Nacional, FRLP', when: 'In progress · expected graduation 2027', desc: '85% of the degree completed. Programming, data structures, databases, systems analysis and design, software architecture and data science.', icon: 'university' },
-        { title: 'Frontend Developer Career', where: 'CoderHouse', when: '2025', desc: 'HTML, CSS, JavaScript, React, responsive design, API consumption and site deployment.', icon: 'coderhouse' }
+        { title: 'Information Systems Engineering', where: 'UTN FRLP', when: '85% completed · Expected graduation: 2027', icon: 'university' },
+        { title: 'Frontend Development', where: 'CoderHouse', when: '2025', icon: 'coderhouse' }
       ]
     },
     projects: { title: 'Featured projects', intro: 'More projects and demos on my GitHub:', all: 'All', filterLabel: 'Filter projects by technology', link: 'View project ↗', close: 'Close details' },
