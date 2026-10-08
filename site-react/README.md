@@ -9,7 +9,7 @@ npm run dev
 ```
 
 Notas:
-- El PDF del CV está en `public/CV-SEMPERJUAN-General.pdf`.
+- El PDF del CV está en `public/CV-SEMPERJUANMANUEL.pdf`.
 - Reemplaza el texto y las imágenes en `src/` según necesites.
 
 Detalles y despliegue:
@@ -34,7 +34,7 @@ Esto genera la carpeta `dist/`. Para publicar en GitHub Pages puedes usar `gh-pa
 
 	Si no añades los PNG, la app mostrará los SVG placeholders existentes (`coderhouse-diploma-1.svg` / `coderhouse-diploma-2.svg`) como fallback.
 
-- CV: para actualizarlo, reemplaza `site-react/public/CV-SEMPERJUAN-General.pdf`.
+- CV: para actualizarlo, reemplaza `site-react/public/CV-SEMPERJUANMANUEL.pdf`.
 
 - Microinteracciones: efectos hover en tarjetas de proyecto, nav con subrayado animado y reveals por scroll.
 

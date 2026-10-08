@@ -31,7 +31,7 @@ export default function Hero(){
       <p className="subtitle">{t.hero.subtitle}</p>
       <p className="meta">{t.hero.meta}</p>
       <div className="cta">
-        <a className="btn btn-primary" href="/CV-SEMPERJUAN-General.pdf" download>{t.hero.cv}</a>
+        <a className="btn btn-primary" href="/CV-SEMPERJUANMANUEL.pdf" download>{t.hero.cv}</a>
         <a className="btn btn-ghost" href="#contact">{t.hero.contact}</a>
       </div>
       <div className="links">
