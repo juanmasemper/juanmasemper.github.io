@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
+import { createPortal } from 'react-dom'
 import { useLanguage } from '../i18n'
 
 export default function Projects(){
   const {lang, t} = useLanguage()
   const projects = [
-    {title: 'CNEISI - Plataforma de inscripciones', desc: 'Congreso Nac. de Estudiantes de Ing. en Sistemas 2024', detail: 'Plataforma full stack para gestionar inscripciones y la organización del congreso.', tags: ['Django', 'REST API', 'JavaScript'], img: '/images/foto2.png', link: 'https://github.com/juanmasemper/cneisi'},
-    {title: 'Agremiación Odontológica', desc: 'Proyecto para la materia de Diseño de Sistemas / demo', detail: 'Sitio web de presentación para una institución profesional, con foco en claridad y navegación.', tags: ['HTML', 'CSS', 'JavaScript'], img: '/images/agremiacionOdontologica1.PNG', link: ''},
+    {title: 'Plataforma de inscripciones CNEISI', desc: 'Congreso Nacional de Estudiantes de Ingeniería en Sistemas · 2024 · +500 inscripciones', descEn: 'National Congress of Systems Engineering Students · 2024 · 500+ registrations', detail: 'Desarrollo y operación end-to-end de una plataforma full stack con más de 500 inscripciones: modelado de datos, backend, endpoints REST, autenticación, frontend de gestión y seguimiento de estados. Digitalizó el circuito de inscripciones que antes se gestionaba en planillas; incluyó despliegue y mantenimiento.', detailEn: 'End-to-end development and operation of a full stack platform with 500+ registrations: data modeling, backend, REST endpoints, authentication, management frontend and status tracking. It digitized the registration flow previously handled in spreadsheets, including deployment and maintenance.', tags: ['Django', 'REST API', 'JavaScript'], img: '/images/foto2.png', link: 'https://github.com/juanmasemper/cneisi'},
+    {title: 'Portfolio web personal', desc: 'React, JavaScript, HTML, CSS y Vercel · 2026', descEn: 'React, JavaScript, HTML, CSS and Vercel · 2026', detail: 'Sitio responsive para presentar perfil, tecnologías y trabajos, con escenas 3D en CSS, bilingüe (ES/EN), tema claro/oscuro y despliegue en Vercel.', detailEn: 'Responsive site to present my profile, technologies and work, with CSS 3D scenes, bilingual (ES/EN) content, light/dark theme and Vercel deployment.', tags: ['React', 'JavaScript', 'CSS'], img: '', link: 'https://github.com/juanmasemper/juanmasemper.github.io'},
     {title: 'JotaStore', desc: 'E-commerce de indumentaria urbana · Proyecto realizado para el curso de Desarrollador Front-end de CoderHouse', descEn: 'Urban fashion e-commerce · Project developed for the CoderHouse Front-end Developer course', detail: 'Tienda online con catálogo de productos, filtros, detalle de artículos y carrito de compras, realizada para el curso de Desarrollador Front-end de CoderHouse.', detailEn: 'Online store with a product catalog, filters, item details, and shopping cart, developed for the CoderHouse Front-end Developer course.', tags: ['React', 'Vite', 'E-commerce'], img: '/images/jotastore-image.png', link: 'https://ojotastore.vercel.app/'}
   ]
   const filters = [{key:'all', label:t.projects.all}, ...Array.from(new Set(projects.flatMap(project => project.tags)), tag => ({key:tag, label:tag}))]
@@ -25,8 +26,8 @@ export default function Projects(){
       <div className="project-grid">
         {visibleProjects.map((p, i) => {
           return (
-            <button key={p.title} type="button" className="project project-button" onClick={() => setSelectedProject(p)} style={{transitionDelay: `${i * 80}ms`}}>
-              <div className="thumb" style={{backgroundImage: `url(${p.img})`}} aria-hidden />
+            <button key={p.title} type="button" className="project project-button tilt" data-tilt="9" onClick={() => setSelectedProject(p)} style={{'--i': i}}>
+              <div className={`thumb${p.img ? '' : ' generated'}`} style={p.img ? {backgroundImage: `url(${p.img})`} : undefined} aria-hidden="true">{!p.img && '</>'}</div>
               <div className="info">
                 <strong>{p.title}</strong>
                 <div className="desc">{lang === 'en' && p.descEn ? p.descEn : p.desc}</div>
@@ -36,17 +37,18 @@ export default function Projects(){
           )
         })}
       </div>
-      {selectedProject && (
+      {selectedProject && createPortal(
         <div className="modal-backdrop" role="presentation" onClick={() => setSelectedProject(null)}>
           <div className="project-modal" role="dialog" aria-modal="true" aria-labelledby="project-modal-title" onClick={event => event.stopPropagation()}>
             <button type="button" className="modal-close" aria-label={t.projects.close} onClick={() => setSelectedProject(null)}>×</button>
-            <img src={selectedProject.img} alt="" />
+            {selectedProject.img && <img src={selectedProject.img} alt="" />}
             <h3 id="project-modal-title">{selectedProject.title}</h3>
             <p>{lang === 'en' && selectedProject.detailEn ? selectedProject.detailEn : selectedProject.detail}</p>
             <div className="project-tags">{selectedProject.tags.map(tag => <span key={tag}>{tag}</span>)}</div>
             {selectedProject.link && <a className="modal-link" href={selectedProject.link} target="_blank" rel="noreferrer">{t.projects.link}</a>}
           </div>
-        </div>
+        </div>,
+        document.body
       )}
     </section>
   )
