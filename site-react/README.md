@@ -9,7 +9,7 @@ npm run dev
 ```
 
 Notas:
-- El PDF del CV permanece en la raíz: `Curriculum Vitae - Semper Juan Manuel.pdf`.
+- El PDF del CV está en `public/CV-SEMPERJUAN-General.pdf`.
 - Reemplaza el texto y las imágenes en `src/` según necesites.
 
 Detalles y despliegue:
@@ -34,24 +34,7 @@ Esto genera la carpeta `dist/`. Para publicar en GitHub Pages puedes usar `gh-pa
 
 	Si no añades los PNG, la app mostrará los SVG placeholders existentes (`coderhouse-diploma-1.svg` / `coderhouse-diploma-2.svg`) como fallback.
 
-- CV automático: el PDF original `Curriculum Vitae - Semper Juan Manuel.pdf` se mantiene en la raíz del repo. Cuando instales dependencias en `site-react`, un script copiará ese PDF a `site-react/public/` como `CV-Semper-Juan-Manuel.pdf` para que el enlace de descarga funcione correctamente:
-
-```bash
-cd site-react
-npm install
-```
-
-El script `postinstall` ejecuta la copia. Si por alguna razón no se copia, puedes hacerlo manualmente:
-
-Windows PowerShell:
-```powershell
-Copy-Item "..\Curriculum Vitae - Semper Juan Manuel.pdf" -Destination "public\CV-Semper-Juan-Manuel.pdf" -Force
-```
-
-Linux / macOS:
-```bash
-cp "../Curriculum\ Vitae\ -\ Semper\ Juan\ Manuel.pdf" public/CV-Semper-Juan-Manuel.pdf
-```
+- CV: para actualizarlo, reemplaza `site-react/public/CV-SEMPERJUAN-General.pdf`.
 
 - Microinteracciones: efectos hover en tarjetas de proyecto, nav con subrayado animado y reveals por scroll.
 
