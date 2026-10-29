@@ -32,7 +32,7 @@ export default function Hero(){
       <p className="meta">{t.hero.meta}</p>
       <div className="cta">
         <a className="btn btn-primary" href="/CV-SEMPERJUANMANUEL.pdf" download>{t.hero.cv}</a>
-        <a className="btn btn-ghost" href="#contact">{t.hero.contact}</a>
+        <a className="btn btn-ghost" href={`https://wa.me/5492215703572?text=${encodeURIComponent(t.hero.whatsappMessage)}`} target="_blank" rel="noopener noreferrer">{t.hero.contact}</a>
       </div>
       <div className="links">
         <a href="mailto:juanmanuelsemper@gmail.com">Email</a>

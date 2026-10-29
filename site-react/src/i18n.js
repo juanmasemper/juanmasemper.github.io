@@ -5,10 +5,11 @@ export const translations = {
     nav: { home: 'Inicio', about: 'Perfil', skills: 'Stack', experience: 'Experiencia', projects: 'Proyectos', contact: 'Contacto' },
     hero: {
       role: 'Desarrollador de Software · Ingeniería en Sistemas (UTN)',
-      subtitle: 'Automatización · IA · Datos',
+      subtitle: 'Automatización · IA · Datos · Páginas y aplicaciones web a medida',
       meta: 'La Plata, Buenos Aires · Disponibilidad full time · presencial / híbrida / remota',
       cv: 'Descargar CV',
-      contact: 'Hablemos'
+      contact: 'Escribime por WhatsApp',
+      whatsappMessage: '¡Hola Juan Manuel! Vi tu portfolio y me gustaría hablar con vos sobre una consulta o un proyecto a medida.'
     },
     stats: [
       { value: 15, suffix: '+', label: 'apps Django en un sistema modular' },
@@ -87,10 +88,11 @@ export const translations = {
     nav: { home: 'Home', about: 'Profile', skills: 'Stack', experience: 'Experience', projects: 'Projects', contact: 'Contact' },
     hero: {
       role: 'Software Developer · Systems Engineering (UTN)',
-      subtitle: 'Automation · AI · Data',
+      subtitle: 'Automation · AI · Data · Custom websites and web applications',
       meta: 'La Plata, Buenos Aires · Available full time · on-site / hybrid / remote',
       cv: 'Download CV',
-      contact: 'Get in touch'
+      contact: 'Message me on WhatsApp',
+      whatsappMessage: 'Hi Juan Manuel! I saw your portfolio and would like to discuss an inquiry or a custom project with you.'
     },
     stats: [
       { value: 15, suffix: '+', label: 'Django apps in a modular system' },
