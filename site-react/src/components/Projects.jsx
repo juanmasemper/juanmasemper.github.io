@@ -12,8 +12,9 @@ export default function Projects(){
       detail: 'Aplicación web a medida que centraliza pacientes, sesiones, vencimientos y estados de pago. Incluye acceso privado por profesional, historial de actividad e integración con WhatsApp para la atención y la gestión de comprobantes. Desarrollada con Next.js y una base de datos libSQL, con despliegue en Vercel.',
       detailEn: 'Custom web application that brings together patients, sessions, due dates and payment statuses. Includes private access for each professional, an activity history and WhatsApp integration for inquiries and payment receipt management. Built with Next.js and a libSQL database, deployed on Vercel.',
       tags: ['Next.js', 'libSQL', 'WhatsApp'],
-      previewLabel: 'EPSI',
-      previewGradient: 'linear-gradient(135deg, #21170f, #65421e)',
+      img: '/images/epsi-gestion-preview.png',
+      previewFit: 'contain',
+      previewBackground: '#15110e',
       link: 'https://epsi-gestion.vercel.app/'
     },
     {
@@ -23,8 +24,9 @@ export default function Projects(){
       detail: 'Aplicación de finanzas personales para registrar movimientos, analizar gastos y organizar las finanzas del mes. Incluye registro e inicio de sesión, edición y eliminación de movimientos, filtros y gráficos. Desarrollada con Next.js, Better Auth, Prisma y PostgreSQL, con datos separados por cuenta.',
       detailEn: 'Personal finance application for tracking transactions, analyzing spending and organizing monthly finances. Includes sign-up and sign-in, transaction editing and deletion, filters and charts. Built with Next.js, Better Auth, Prisma and PostgreSQL, with separate data for each account.',
       tags: ['Next.js', 'PostgreSQL', 'Prisma'],
-      previewLabel: 'FF',
-      previewGradient: 'linear-gradient(135deg, #07392e, #16866d)',
+      img: '/images/financeflow-preview.png',
+      previewFit: 'contain',
+      previewBackground: '#f8f5fc',
       link: 'https://argentina-financeflow.vercel.app/'
     },
     {
@@ -34,8 +36,9 @@ export default function Projects(){
       detail: 'Monitor financiero que transforma datos de una planilla Excel en una interfaz web para consultar acciones, CEDEARs y ETF. Incluye búsqueda por compañía o ticker, filtros por sector, ordenamiento, fichas de activos y vista compacta para celulares. Ofrece acceso con cuenta, interfaz en español e inglés e integración con Alpaca para consultar cotizaciones de los símbolos cubiertos.',
       detailEn: 'Financial monitor that turns Excel spreadsheet data into a web interface for browsing stocks, CEDEARs and ETFs. Includes company or ticker search, sector filters, sorting, asset details and a compact mobile view. Offers account-based access, Spanish and English interfaces and Alpaca integration for quotes on supported symbols.',
       tags: ['Python', 'JavaScript', 'HTML'],
-      previewLabel: 'Φ',
-      previewGradient: 'linear-gradient(135deg, #0b213e, #286596)',
+      img: '/images/phi-monitor-preview.png',
+      previewFit: 'contain',
+      previewBackground: '#0e1828',
       link: 'https://phi-monitor-acceso.vercel.app/'
     },
     {title: 'Plataforma de inscripciones CNEISI', desc: 'Congreso Nacional de Estudiantes de Ingeniería en Sistemas · 2024 · +500 inscripciones', descEn: 'National Congress of Systems Engineering Students · 2024 · 500+ registrations', detail: 'Plataforma full stack para 500+ inscripciones: modelado de datos, APIs REST, autenticación, panel de gestión y seguimiento de estados. Digitalización del proceso administrativo previamente gestionado en planillas.', detailEn: 'Full stack platform for 500+ registrations: data modeling, REST APIs, authentication, management panel and status tracking. Digitization of the administrative process previously handled in spreadsheets.', tags: ['Django', 'REST API', 'JavaScript'], img: '/images/foto2.png', link: 'https://github.com/juanmasemper/cneisi'},
